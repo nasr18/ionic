@@ -31,6 +31,7 @@ export class AppComponent {
         console.log({ state });
         if (state) {
           this.router.navigate(['home']);
+          // this.authenticationService.logout();
         } else {
           this.router.navigate(['login']);
         }
